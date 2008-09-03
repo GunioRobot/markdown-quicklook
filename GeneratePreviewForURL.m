@@ -20,11 +20,13 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 	
     pool = [[NSAutoreleasePool alloc] init];
     // Before proceeding make sure the user didn't cancel the request
-	NSString *input = [[NSString alloc]initWithContentsOfURL:(NSURL *)url encoding:NSUTF8StringEncoding error:noErr];
-    id parser = [Nu parser];
-	id script = [parser parse:@"(load \"markdown\")"];
-	[parser eval:script];
 	
+	// Locate the path to the embedded NuMarkdown framework.  Load it using NSBundle.
+	NSString *nuMarkdownPath = [[[NSBundle bundleWithIdentifier:@"com.drewfranklin.qlgenerator.markdown"] bundlePath] stringByAppendingString:@"/Frameworks/NuMarkdown.framework"];
+	NSBundle *nuMarkdownBundle = [NSBundle bundleWithPath:nuMarkdownPath];
+	[nuMarkdownBundle load];
+
+	NSString *input = [[[NSString alloc]initWithContentsOfURL:(NSURL *)url encoding:NSUTF8StringEncoding error:noErr] autorelease];
 	Class NuMarkdown = NSClassFromString(@"NuMarkdown");
 	NSString *html = [NuMarkdown convert:input];
 	

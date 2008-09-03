@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9C29F70E6EF0F20081EA8C /* NuMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9C29F60E6EF0F20081EA8C /* NuMarkdown.framework */; };
+		1D9C2A3A0E6EF84F0081EA8C /* NuMarkdown.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9C29F60E6EF0F20081EA8C /* NuMarkdown.framework */; };
 		2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */; };
 		3A2C97900E160DD00058465E /* Nu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2C978F0E160DD00058465E /* Nu.framework */; };
 		3A2C97DC0E164ED50058465E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2C97DB0E164ED50058465E /* Foundation.framework */; };
 		3A2C985D0E164F0A0058465E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2C985C0E164F0A0058465E /* Cocoa.framework */; };
-		3A4657DC0E6E8FC000BED0EC /* NuMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4657DB0E6E8FC000BED0EC /* NuMarkdown.framework */; };
-		3A4657DF0E6E8FC400BED0EC /* NuMarkdown.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4657DB0E6E8FC000BED0EC /* NuMarkdown.framework */; };
-		3A4657E70E6E903100BED0EC /* markdown.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3ABF46390E16F5C600004E09 /* markdown.nu */; };
 		3ABF46530E16F70800004E09 /* Nu.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2C978F0E160DD00058465E /* Nu.framework */; };
 		61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */; };
 		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
@@ -31,7 +30,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3A4657DF0E6E8FC400BED0EC /* NuMarkdown.framework in Copy Frameworks */,
+				1D9C2A3A0E6EF84F0081EA8C /* NuMarkdown.framework in Copy Frameworks */,
 				3ABF46530E16F70800004E09 /* Nu.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -43,12 +42,11 @@
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08FB77B6FE84183AC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		1D9C29F60E6EF0F20081EA8C /* NuMarkdown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NuMarkdown.framework; path = /Library/Frameworks/NuMarkdown.framework; sourceTree = "<absolute>"; };
 		2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		3A2C978F0E160DD00058465E /* Nu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nu.framework; path = /Library/Frameworks/Nu.framework; sourceTree = "<absolute>"; };
 		3A2C97DB0E164ED50058465E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A2C985C0E164F0A0058465E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		3A4657DB0E6E8FC000BED0EC /* NuMarkdown.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NuMarkdown.framework; path = "Code Libraries/numarkdown/bin/NuMarkdown.framework"; sourceTree = DEVELOPER_DIR; };
-		3ABF46390E16F5C600004E09 /* markdown.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = markdown.nu; path = "Code Libraries/numarkdown/nu/markdown.nu"; sourceTree = DEVELOPER_DIR; };
 		61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		8D576316048677EA00EA77CD /* markdown.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = markdown.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +67,7 @@
 				3A2C97900E160DD00058465E /* Nu.framework in Frameworks */,
 				3A2C97DC0E164ED50058465E /* Foundation.framework in Frameworks */,
 				3A2C985D0E164F0A0058465E /* Cocoa.framework in Frameworks */,
-				3A4657DC0E6E8FC000BED0EC /* NuMarkdown.framework in Frameworks */,
+				1D9C29F70E6EF0F20081EA8C /* NuMarkdown.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +88,7 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				3A4657DB0E6E8FC000BED0EC /* NuMarkdown.framework */,
+				1D9C29F60E6EF0F20081EA8C /* NuMarkdown.framework */,
 				3A2C985C0E164F0A0058465E /* Cocoa.framework */,
 				3A2C97DB0E164ED50058465E /* Foundation.framework */,
 				3A2C978F0E160DD00058465E /* Nu.framework */,
@@ -114,7 +112,6 @@
 		08FB77AFFE84173DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				3ABF46390E16F5C600004E09 /* markdown.nu */,
 				61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */,
 				2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */,
 				08FB77B6FE84183AC02AAC07 /* main.c */,
@@ -153,6 +150,7 @@
 				8D576313048677EA00EA77CD /* Frameworks */,
 				8D576315048677EA00EA77CD /* Rez */,
 				3ABF46510E16F6D200004E09 /* Copy Frameworks */,
+				1D9C2A2D0E6EF4B10081EA8C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -186,7 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4657E70E6E903100BED0EC /* markdown.nu in Resources */,
 				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +199,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D9C2A2D0E6EF4B10081EA8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change \\\n\"NuMarkdown.framework/Versions/A/NuMarkdown\" \\\n\"@loader_path/../Frameworks/NuMarkdown.framework/Versions/A/NuMarkdown\" \\\n\"$TARGET_BUILD_DIR/$TARGET_NAME.qlgenerator/Contents/MacOS/$TARGET_NAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D576311048677EA00EA77CD /* Sources */ = {
