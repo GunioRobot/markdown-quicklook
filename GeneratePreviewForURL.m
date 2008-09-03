@@ -34,7 +34,6 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 	[props setObject:@"UTF-8" forKey:(NSString *)kQLPreviewPropertyTextEncodingNameKey];
 	[props setObject:@"text/html" forKey:(NSString *)kQLPreviewPropertyMIMETypeKey];
 	
-	NSLog(@"%@", html);
 	QLPreviewRequestSetDataRepresentation(preview,(CFDataRef)[html dataUsingEncoding:NSUTF8StringEncoding],kUTTypeHTML,(CFDictionaryRef)props);
 
     [pool release];
